@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE hmtl>
+<html>
+
+	<head>
+		<title>Faculdade Impacta</title>
+		<link rel="stylesheet" href="site.css" />
+		<script src="scripts/script.js" ></script>
+	<head>
+	<body>
+		<header>
+			<img src="Marx.jpg" width="250px" />
+			<div class="título" >
+			<h1>Faculdade Impacta de Tecnologia</h1>
+			<h2>A TECNOLOGIA MUDA O SEU FUTURO</h2>
+			</div>
+			<nav>
+				<ul class="sem-bullets" >
+					<li><a href="{% url 'cursos:lista' %}" class="link" >Cursos</a></li>
+					<li><a href="{% url 'home' %}" class="link" >Voltar</a></li>
+					<li><a href="entrar.html" class="link" >Entrar</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			{% block conteudo %}{% endblock	%}
+		<main>
+
+<footer>
+<strong>11 3254-8300 - Impacta 2020 - 
+Todos os direitos reservados.</strong>
+</footer>
